@@ -301,7 +301,7 @@ lab2.controller('player2', function(processMove, $rootScope, $scope, $ionicModal
         // Ignore this block for now; this is for native transitions (More on Wednesday 2/22/17) //
       }
       else {
-        $ionicViewSwitcher.nextDirection('forward');
+$ionicViewSwitcher.nextDirection('forward');
         /* TODO: Transition to player1 state since neither player has 2/3 */
         $state.go("player1", {'player1_wins': $scope.player1_wins, 'player2_wins': $scope.player2_wins})
       }
